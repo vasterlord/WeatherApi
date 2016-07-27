@@ -4,7 +4,6 @@ package ivanrudyk.com.open_weather_api.fragment;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Path;
@@ -30,7 +29,7 @@ import ivanrudyk.com.open_weather_api.model_user.Users;
  */
 public class NavigationDraverFragment extends Fragment {
 
-    Users users = new Users();
+    public static Users users = new Users();
 
     public static final String PREF_FILE_NAME = "preffilename";
     public static final String KEY_USER_LEARNED_DRAWER = "user_learned_drawer";
@@ -58,8 +57,8 @@ public class NavigationDraverFragment extends Fragment {
         if (savedInstanceState != null) {
             mFromSavedInstanseState = true;
         }
-        users.setUserName("Mylian");
-        users.setPhoto(BitmapFactory.decodeResource(getResources(), R.drawable.qwe));
+//        users.setUserName("Mylian");
+//        users.setPhoto(BitmapFactory.decodeResource(getResources(), R.drawable.qwe));
         if (bmEnd==null) {
          // Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.qwe);
             bmEnd = getCircleMaskedBitmapUsingClip(users.getPhoto(), 60);
