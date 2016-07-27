@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Wether App</string>
+    <string name="title_activity_main"></string>
+    <string name="action_settings">Settings</string>
+    <string name="login">login</string>
+    <string name="title_activity_register">REGISTER</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
